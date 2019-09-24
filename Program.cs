@@ -6,6 +6,7 @@ namespace ToDo
     {
         static void Main(string[] args)
         {
+            
             bool shouldRun = true;
             while (shouldRun)
             {
@@ -17,11 +18,18 @@ namespace ToDo
 
                 ConsoleKeyInfo keypressed = Console.ReadKey(true);
 
+                Console.Clear();
+
                 switch (keypressed.Key)
                 {
 
                     case ConsoleKey.D1:
 
+                        break;
+
+                    case ConsoleKey.D3:
+
+                        shouldRun = false;
                         break;
                 }
             }
